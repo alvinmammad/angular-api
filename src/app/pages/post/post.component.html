@@ -1,0 +1,17 @@
+<div class="container">
+  <div class="col-md-4">
+    <ul class="list-group mt-4 mx-4">
+      <li
+        *ngFor="let post of posts"
+        class="list-group-item"
+        (click)="getUser(post, name)"
+      >
+        {{ post.title }}
+      </li>
+      <div class="col-md-4">
+        <li class="list-group-item">{{ this.name }}</li>
+      </div>
+    </ul>
+  </div>
+  <div class="col-md-4"></div>
+</div>
